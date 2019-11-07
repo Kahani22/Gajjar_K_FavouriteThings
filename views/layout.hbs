@@ -14,17 +14,7 @@
 </head>
 
 <body>
-    <h1>Fun with Modules!</h1>
-    <nav data-module="nav">
-        <!-- nav elements must have nav-item -->
-        <ul>
-            <li><a href="#" class="nav-item">1</a></li>
-            <li><a href="/2" class="nav-item">2</a></li>
-            <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
-        </ul>
-    </nav>
+    <h1>My Favourite Movies</h1>
 
     <main>
         {{!-- dynamic content goes here between handle bars --}}
@@ -32,15 +22,8 @@
     </main>
 
     <footer>
-        <p>here's some footer text</p>
+        <p>The list goes on...</p>
 
-        <ul>
-            <li><a href="#" class="nav-item">1</a></li>
-            <li><a href="/2" class="nav-item">2</a></li>
-            <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
-        </ul>
     </footer>
 
     <a id="to-top" href="#" class="nav-item">back to top</a>
@@ -52,19 +35,6 @@
         console.log('name in main file: ' + name);
     </script>
 
-    <!-- templates -> these don't get rendered immediately -->
-    <template id="user-template">
-        <!-- you can put all kinds of markup here - semantic tagging, etc -->
-        <div class="user-panel">
-            <div class="user-panel-header">
-                <img class="u-avatar"></img>
-                <h1 class="u-name"></h1>
-            </div>
-
-            <button class="user-button">More Details</button>
-        </div>
-    </template>
-    <!-- end templates-->
 </body>
 
 </html>

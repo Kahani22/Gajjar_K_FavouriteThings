@@ -5,23 +5,26 @@ const myVM = (() => {
 let userButtons = document.querySelectorAll('.u-link'),
     lightBox = document.querySelector('.lightbox');
 
-    function renderSocialMedia(media) {
-        return `<ul class="u-social">
-                    ${media.map(item => `<li>${item}</li>`).join("")}
-                </ul>`;
-    }
+    // function renderSocialMedia(media) {
+    //     return `<ul class="u-social">
+    //                 ${media.map(item => `<li>${item}</li>`).join("")}
+    //             </ul>`;
+    // }
 
-function parseUserData(person) {
+function parseUserData(movie) {
     let targetDiv = lightBox.querySelector('.lb-content');
     let targetImg = lightBox.querySelector('img');
     let bioContent = `
-        <p>${person.bio}</p>
-        <h4>Social Media:</h4>
-        <!-- loop thru social media stuff here -->
-        ${renderSocialMedia(person.social)}
+     
+        <h4>IMDb Rating: ${movie.IMDb_Rating}</h4>
+        <h4>Genre: ${movie.Genre}</h4>
+        <h4>Director: ${movie.Director}</h4>
+        <h4>Release Date: ${movie.Release_Date}</h4>   
+        <p>${movie.bio}</p>
+        
     `;
     targetDiv.innerHTML = bioContent;
-    targetImg.src = person.currentSrc;
+    targetImg.src = movie.currentSrc;
     lightBox.classList.add('show-lb');
 }
 
