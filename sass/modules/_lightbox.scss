@@ -9,7 +9,7 @@
     z-index: 5000;
     padding: 20px;
 
-    background-color: rgba(0, 0,0, 0.85);
+    background-color: rgba(204, 149, 149, 0.85);
 
     .sidebar {
         flex: 1;
@@ -17,6 +17,10 @@
     
     .lb-content {
         flex: 3;
+        p {
+            width: 80%;
+           
+        } 
     }
 
     img { max-width: 250px; }
@@ -42,3 +46,13 @@
         padding: 10px;
     }
 }
+
+
+
+@media screen and (max-width: 640px) {
+    .lightbox {
+        flex-direction: column;
+    }
+
+}
+

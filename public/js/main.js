@@ -31,9 +31,10 @@ function parseUserData(movie) {
 function getUserData(e) {
     e.preventDefault();
     // 1, 2, or 3 depending on which anchor tag u click
-    let url = `/${this.getAttribute('href')}`,
+    let url = `/users/${this.getAttribute('href')}`,
         currentImg = this.previousElementSibling.getAttribute('src');
     // this goes and fetches the database content (or API endp)
+
     fetch(url)
         .then(res => res.json())
         .then(data => {

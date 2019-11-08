@@ -9,7 +9,7 @@
         text-align: center;
         padding: 8px;
 
-        .m-image { max-width: 200px; }
+        .m-image { max-width: 300px; }
 
         .u-link { 
             display: block; 
@@ -26,6 +26,7 @@
 
 @media screen and (min-width: 900px) {
     .team {
+      
         .user-panel { 
             flex: 1 1;
 
@@ -33,4 +34,3 @@
         }
     }
 }
-
